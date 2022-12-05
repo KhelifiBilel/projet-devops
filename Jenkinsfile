@@ -5,10 +5,10 @@ def gv
 pipeline {
     agent any
     environment {
-        DEPLOYMENT_SERVER_IP = "192.168.136.129"
-        DEPLOYMENT_SERVER_USER= "khalil"
-        JENKINS_SERVER_IP ="192.168.136.128"
-        JENKINS_SERVER_USER="admin"
+        DEPLOYMENT_SERVER_IP = "20.100.201.60"
+        DEPLOYMENT_SERVER_USER= "bilel"
+        JENKINS_SERVER_IP ="20.4.49.224"
+        JENKINS_SERVER_USER="jenkins"
     }
     tools {
         maven 'maven'
