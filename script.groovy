@@ -12,7 +12,7 @@ def buildImage() {
 
 def deployApp(String serverIp, String serverUser) {
     echo 'deploying the application...'
-    def composeRun = '"export MYSQLDB_USER=root MYSQLDB_ROOT_PASSWORD=khalil MYSQLDB_DATABASE=education MYSQLDB_LOCAL_PORT=3306 MYSQLDB_DOCKER_PORT=3306 SPRING_LOCAL_PORT=8080 SPRING_DOCKER_PORT=8080 && docker-compose up -d"'
+    def composeRun = '"export MYSQLDB_USER=root MYSQLDB_ROOT_PASSWORD=bilel MYSQLDB_DATABASE=education MYSQLDB_LOCAL_PORT=3306 MYSQLDB_DOCKER_PORT=3306 SPRING_LOCAL_PORT=8080 SPRING_DOCKER_PORT=8080 && docker-compose up -d"'
     sshagent (credentials: ['deployment-server']) {
         sh "ssh -o StrictHostKeyChecking=no ${serverUser}@${serverIp} ${composeRun}"
     }
