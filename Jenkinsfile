@@ -6,9 +6,9 @@ pipeline {
     agent any
     environment {
     //webhook
-        DEPLOYMENT_SERVER_IP = "20.100.201.60"
+        DEPLOYMENT_SERVER_IP = "20.100.201.60"     // to modify
         DEPLOYMENT_SERVER_USER= "bilel"
-        JENKINS_SERVER_IP ="20.4.49.224"
+        JENKINS_SERVER_IP ="20.4.49.224"            // to modify
         JENKINS_SERVER_USER="jenkins"
     }
     tools {
@@ -52,7 +52,7 @@ pipeline {
                 echo 'removing the old images from the Jenkins server..'
                 gv.cleanUntaggedImages("${JENKINS_SERVER_IP}","${JENKINS_SERVER_USER}")
                 //emailext body: 'Your backend pipeline finished the buit and deployment of the project successfully', recipientProviders: [[$class: 'DevelopersRecipientProvider'], [$class: 'RequesterRecipientProvider']], subject: 'Success of digihunt pipeline stages'
-
+                // test
             }
         }
         failure {
