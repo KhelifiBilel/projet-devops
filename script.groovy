@@ -7,7 +7,12 @@ def buildImage() {
         sh 'docker push khelifibilel/devops:spring-app-1.0'
     }
 }
-
+def sonarScan() {
+    echo "Running sonarQube scan..."
+    withSonarQubeEnv(installationName: 'sonar-server') {
+        sh 'mvn org.sonarsource.scanner.maven:sonar-maven-plugin:3.2:sonar'
+    }
+}
 
 
 def deployApp(String serverIp, String serverUser) {
