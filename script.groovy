@@ -10,7 +10,7 @@ def buildImage() {
 def sonarScan() {
     echo "Running sonarQube scan..."
     withSonarQubeEnv(installationName: 'sonarServer') {
-        sh 'mvn org.sonarsource.scanner.maven:sonar-maven-plugin:3.2:sonar'
+        sh './mvnw sonar:sonar'
     }
 }
 
