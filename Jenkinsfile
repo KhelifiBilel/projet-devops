@@ -5,6 +5,7 @@ def gv
 pipeline {
     agent any
     environment {
+    //webhook
         DEPLOYMENT_SERVER_IP = "20.100.201.60"
         DEPLOYMENT_SERVER_USER= "bilel"
         JENKINS_SERVER_IP ="20.4.49.224"
