@@ -23,9 +23,7 @@ pipeline {
             }
         }
 
-        //    stage('maven install'){
-
-          //            steps{sh 'mvn clean install -DMaven.test.skip.true'}}
+      //
 
 
  stage('SonarQube') {
