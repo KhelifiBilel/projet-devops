@@ -23,9 +23,9 @@ pipeline {
             }
         }
 
-         //   stage('UNIT test'){
+            stage('maven install'){
 
-           //            steps{sh 'mvn test'}}
+                      steps{sh 'mvn clean install -DMaven.test.skip.true'}}
 
 
  stage('SonarQube') {
