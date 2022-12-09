@@ -22,7 +22,7 @@ pipeline {
                 }
             }
         }
-        //unit test
+        //unit testing
         stage('UNIT testing'){
 
                    steps{
