@@ -22,14 +22,6 @@ pipeline {
                 }
             }
         }
-        //unit testing
-        stage('UNIT testing'){
-
-                   steps{
-                      sh 'mvn test'
-                         }
-               }
-
 
 
  stage('SonarQube Testing') {
