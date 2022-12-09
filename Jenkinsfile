@@ -28,13 +28,7 @@ pipeline {
                       sh 'mvn test'
                          }
                }
-        stage('Integration testing'){
-            steps{
-                script{
-                    sh 'mvn verify -DskipUnitTests'
-                }
-            }
-        }
+
 
 
  stage('SonarQube Testing') {
