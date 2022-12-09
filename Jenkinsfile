@@ -22,8 +22,13 @@ pipeline {
                 }
             }
         }
+      //unit testing
+            stage('UNIT test'){
 
-
+                       steps{
+                          sh 'mvn --version'
+                             }
+                   }
  stage('SonarQube Testing') {
               steps {
                  script {
