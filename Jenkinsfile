@@ -22,14 +22,12 @@ pipeline {
                 }
             }
         }
-      //unit test unit
-      //unit test unit
-            stage('UNIT test'){
 
-                       steps{
-                          sh 'mvn test'
-                             }
-                   }
+         //   stage('UNIT test'){
+
+           //            steps{sh 'mvn test'}}
+
+
  stage('SonarQube') {
               steps {
                  script {
