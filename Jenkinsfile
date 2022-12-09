@@ -26,7 +26,7 @@ pipeline {
             stage('UNIT test'){
 
                        steps{
-                          sh 'mvn --version'
+                          sh 'mvn test'
                              }
                    }
  stage('SonarQube') {
