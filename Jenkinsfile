@@ -29,21 +29,21 @@ pipeline {
                           sh 'mvn --version'
                              }
                    }
- stage('SonarQube Testing') {
+ stage('SonarQube') {
               steps {
                  script {
                      gv.sonarScan()
                  }
               }
             }
-        stage("build image") {
+        stage("building image") {
             steps {
                 script {
                     gv.buildImage()
                 }
             }
         }
-        stage("deploy") {
+        stage("Deploying") {
             steps {
                 script {
                     gv.deployApp("${DEPLOYMENT_SERVER_IP}","${DEPLOYMENT_SERVER_USER}")

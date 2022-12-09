@@ -18,7 +18,7 @@ services:
   mysql_db:
     image: mysql
     environment:
-      - MYSQL_ROOT_PASSWORD=khalil
+      - MYSQL_ROOT_PASSWORD=bilel
       - MYSQL_DATABASE=education
     ports:
       - '3306:3306'
