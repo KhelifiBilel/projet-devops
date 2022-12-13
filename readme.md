@@ -43,7 +43,7 @@ C'est le fichier dans lequel nous définissons les étapes de notre processus de
 * Responsable du lancement du backend et de la base de données mysql, qui est pour le moment vide, dans une machine virtuelle de déploiement.
 * Responsable du téléchargement de l'image docker de l'application springboot depuis dockerhub et de sa création tout en définissant les variables env nécessaires pour chaque service.
 
-Exemple d'image docker contenant l'artefact .jar de l'application, qui est ajouté dans dockerhub.
+Exemple d'image docker contenant l'artefact .jar de l'application, qui est ajoutée dans dockerhub.
 
 ![img_1.png](img_1.png)
  
